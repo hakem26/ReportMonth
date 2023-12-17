@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گزارش کار</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;700&family=Mooli&family=Mulish&family=Poppins:wght@200;400&family=Rubik:wght@400;700&family=Ubuntu&family=Vazirmatn:wght@100;200;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <form action="script.js">
+                <fieldset>
+                    <legend>اطلاعات فاکتور:</legend>
+                    <label for="factor-date">تاریخ فاکتور: </label><input class="inpt" type="date" name="factor-date" id="factor-date"><br>
+                    <label for="cus-name">نام مشتری: </label>
+                    <input type="text" name="cus-name" id="cus-name" placeholder="نام مشتری را وارد نمایید" class="inpt" ><br><br>
+                    <h3>محصولات:</h3>
+                    <label for="product-list">انتخاب محصول: </label>
+                    <input name="product-list" list="product-list" class="inpt">
+                    <datalist id="product-list"></datalist>
+                    <label for="product-count">تعداد محصول</label>
+                    <input type="number" name="product-count" id="product-count" class="inpt"><input type="button" class="btn" value="افزودن محصول">
+                    <textarea name="products" id="products" class="products-tarea"></textarea>
+                </fieldset>
+            </form>
+        </aside>
+        <main>
+            <div class="row">
+                <h3 class="title"> گزارش کاری سهیلا قاسمی و شیدا جوهری از تاریخ <span class="start-date">1402/05/03</span> تا <span class="end-date">1402/05/31</span> مبلغ <span class="price">63.530.000</span> تومان</h3>
+                <table>
+                    <tr>
+                        <th>تاریخ</th>
+                        <th>نام خریدار</th>
+                        <th>اقلام و قیمت (تومان)</th>
+                        <th>جمع</th>
+                        <th>اشانتیون</th>
+                        <th>تخفیف</th>
+                        <th>رقم پرداختی</th>
+                        <th>نوع پرداخت</th>
+                        <th>تاریخ واریز</th>
+                        <th>مانده</th>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
